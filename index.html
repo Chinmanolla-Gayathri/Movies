@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFinder Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🍿 Movie<span class="highlight">Finder</span></div>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search movies (e.g., Inception)...">
+        </div>
+        <div id="favorites-btn" class="nav-item">
+            ❤️ Favorites <span id="fav-count" class="badge">0</span>
+        </div>
+    </header>
+
+    <main id="movie-container">
+        <div class="placeholder-text">Search for a movie to begin...</div>
+    </main>
+    
+    <div id="loading-trigger" class="loader"></div>
+
+    <div id="fav-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Your Watchlist</h2>
+                <button id="close-modal" class="close-btn">&times;</button>
+            </div>
+            <div id="fav-container" class="grid-layout">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
